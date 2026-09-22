@@ -1,16 +1,19 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Search,
+  ArrowRight,
   Database,
-  ShoppingCart,
-  Users,
   Globe,
   Headphones,
-  ArrowRight,
+  ListChecks,
+  Mail,
+  Search,
+  ShoppingCart,
+  Users,
+  Workflow,
 } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -48,6 +51,24 @@ const services = [
     icon: Headphones,
     title: "Virtual Assistant",
     desc: "Dedicated support for outreach & data tasks.",
+  },
+  {
+    href: "/services/manual-prospect-list",
+    icon: ListChecks,
+    title: "Manual Prospect List",
+    desc: "Research-verified prospects matched to your criteria.",
+  },
+  {
+    href: "/services/email-list-building",
+    icon: Mail,
+    title: "Email List Building",
+    desc: "Clean, targeted email lists ready for outreach.",
+  },
+  {
+    href: "/services/gtm-leads",
+    icon: Workflow,
+    title: "GTM Leads",
+    desc: "Automated lead generation and prospecting systems.",
   },
 ];
 
