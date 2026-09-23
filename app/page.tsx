@@ -5,12 +5,14 @@ import LeadEngine from "@/components/sections/LeadEngine";
 import ServicesPreview from "@/components/sections/ServicesPreview";
 import Testimonials from "@/components/sections/Testimonials";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import RevenueReadiness from "@/components/sections/RevenueReadiness";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <LeadEngine />
+      <RevenueReadiness />
       <WhyChooseUs />
       <ServicesPreview />
       <Testimonials />

@@ -1,53 +1,19 @@
-export const metadata = { title: "Portfolio" };
+import Link from "next/link";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+
+export const metadata = { title: "Selected Work" };
 
 const cases = [
-  {
-    title: "SaaS pipeline acceleration",
-    industry: "B2B SaaS",
-    result: "2,400 verified decision-maker contacts · 31% reply rate on first sequence",
-    desc: "Built a multi-geo list of VP Sales and CRO contacts for a mid-market sales engagement platform.",
-  },
-  {
-    title: "Ecommerce seller outreach",
-    industry: "Ecommerce",
-    result: "1,800 store owners · 22% positive response",
-    desc: "Targeted Shopify and Amazon sellers in beauty and home categories for a logistics SaaS.",
-  },
-  {
-    title: "CRM enrichment at scale",
-    industry: "Fintech",
-    result: "18k records enriched · 94% email match rate",
-    desc: "Filled missing titles, emails, and firmographics for an existing CRM export.",
-  },
-  {
-    title: "Influencer discovery",
-    industry: "Consumer brand",
-    result: "320 micro-influencers · niche + engagement filters",
-    desc: "Delivered creator contacts in fitness and wellness with verified emails and follower ranges.",
-  },
+  { industry: "B2B SaaS", title: "Sales-leader market mapping", challenge: "A sales platform needed a defined account universe across several markets, with senior revenue leaders mapped to each account.", approach: "We applied company-size, segment, and role rules, then organized the output into clear campaign cohorts.", delivery: ["ICP tier and account rationale", "Revenue-leader contact mapping", "Market and segment fields"] },
+  { industry: "Ecommerce technology", title: "Merchant prospecting by niche", challenge: "A commerce provider wanted to focus outreach on relevant stores instead of sending one message to every merchant.", approach: "We researched brands by category, platform signals, and operational fit, then added owner or operator contact paths.", delivery: ["Brand and store URLs", "Category and platform research", "Decision-maker or business contacts"] },
+  { industry: "Fintech", title: "CRM readiness project", challenge: "An incomplete CRM export made it hard to route records and understand which accounts deserved attention.", approach: "We mapped existing columns, enriched priority fields, normalized values, and returned a documented coverage view.", delivery: ["Company and contact enrichment", "Normalized titles and segments", "Field coverage summary"] },
+  { industry: "Consumer brand", title: "Creator partnership shortlist", challenge: "A brand needed a manageable creator shortlist that considered actual content fit—not only audience size.", approach: "We screened creators against platform, niche, audience, and content criteria and made review simple for the partnership team.", delivery: ["Creator profiles and URLs", "Audience and niche indicators", "Brand-fit research notes"] },
 ];
 
 export default function PortfolioPage() {
-  return (
-    <div className="py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">Selected work</h1>
-          <p className="text-slate-400">
-            Anonymized examples of projects we've delivered. Results vary by industry and list quality requirements.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {cases.map((c) => (
-            <div key={c.title} className="glass rounded-2xl p-6 md:p-7">
-              <span className="text-xs font-medium text-brand-400 mb-2 block">{c.industry}</span>
-              <h3 className="text-lg font-semibold text-white mb-2">{c.title}</h3>
-              <p className="text-sm text-slate-400 mb-4">{c.desc}</p>
-              <p className="text-sm font-medium text-brand-300">{c.result}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+  return <main className="py-12 md:py-16"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mb-14"><p className="text-brand-400 text-xs font-semibold uppercase tracking-[.18em] mb-3">Selected work</p><h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">Different markets. One useful standard: work your team can use.</h1><p className="text-slate-400 text-lg leading-relaxed">These anonymized project patterns show how we structure research and delivery. The right scope, data availability, and campaign execution vary by market, so we define success with you before production.</p></div>
+    <div className="grid md:grid-cols-2 gap-6">{cases.map(c => <article key={c.title} className="glass rounded-2xl p-6 md:p-7"><p className="text-xs font-semibold uppercase tracking-wider text-brand-400 mb-3">{c.industry}</p><h2 className="text-xl font-semibold text-white mb-5">{c.title}</h2><div className="space-y-4 text-sm"><div><p className="text-slate-500 mb-1">The brief</p><p className="text-slate-300 leading-relaxed">{c.challenge}</p></div><div><p className="text-slate-500 mb-1">How we approached it</p><p className="text-slate-300 leading-relaxed">{c.approach}</p></div><div className="pt-2 border-t border-slate-800"><p className="text-slate-500 mb-2">Typical delivery</p><ul className="space-y-2">{c.delivery.map(item => <li key={item} className="flex gap-2 text-slate-300"><CheckCircle2 className="h-4 w-4 text-brand-400 shrink-0" />{item}</li>)}</ul></div></div></article>)}</div>
+    <div className="mt-12 rounded-2xl border border-brand-500/20 bg-brand-500/5 p-7 md:p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-5"><div><h2 className="text-xl font-semibold text-white mb-2">Have a project with unusual criteria?</h2><p className="text-sm text-slate-400">Tell us about the market, records you already have, and the decision your team needs to make next.</p></div><Link href="/contact" className="shrink-0 inline-flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-400">Discuss your project <ArrowRight className="w-4 h-4" /></Link></div>
+  </div></main>;
 }
