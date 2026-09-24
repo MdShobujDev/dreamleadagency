@@ -6,7 +6,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "We cut our cost-per-meeting by 40% after switching to DreamLeadAgency lists. The data quality is consistently high.",
+      "We cut our cost-per-meeting by 40% after switching to ProspectListBuilding lists. The data quality is consistently high.",
     name: "Sarah Chen",
     role: "VP Sales, CloudScale",
   },
@@ -33,7 +33,7 @@ export default function Testimonials() {
             What our clients say
           </h2>
           <p className="text-slate-400">
-            Results from teams that rely on DreamLeadAgency.
+            Results from teams that rely on ProspectListBuilding.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">

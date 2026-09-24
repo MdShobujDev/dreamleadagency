@@ -63,7 +63,7 @@ export default function LeadEngine() {
           <div>
             <div className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-300">
               <Sparkles className="h-4 w-4" />
-              The DreamLeadAgency method
+              The ProspectListBuilding method
             </div>
             <h2 className="max-w-xl text-3xl font-bold tracking-tight text-white md:text-5xl md:leading-[1.08]">
               Turn a sharp ICP into a full pipeline.

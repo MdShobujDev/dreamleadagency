@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
     const userHtml = `
       <h2>Order received, ${data.contactName}!</h2>
-      <p>Thank you for placing an order with DreamLeadAgency. Here's a summary:</p>
+      <p>Thank you for placing an order with ProspectListBuilding. Here's a summary:</p>
       <ul>
         <li><strong>Industry:</strong> ${data.industry}</li>
         <li><strong>Volume:</strong> ${data.volume} contacts</li>
@@ -50,11 +50,11 @@ export async function POST(req: NextRequest) {
         <li><strong>Deadline:</strong> ${data.deadline || "Standard"}</li>
       </ul>
       <p>Our team will review the requirements and send a confirmation with pricing and timeline within one business day.</p>
-      <p>— The DreamLeadAgency Team</p>
+      <p>— The ProspectListBuilding Team</p>
     `;
     await sendUserConfirmation(
       data.contactEmail,
-      "Your DreamLeadAgency order confirmation",
+      "Your ProspectListBuilding order confirmation",
       userHtml,
     );
 

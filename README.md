@@ -1,4 +1,4 @@
-# DreamLeadAgency — Premium B2B Lead Generation Website
+# ProspectListBuilding — Premium B2B Lead Generation Website
 
 Modern Next.js 15 application for a B2B lead generation agency. Completely redesigned UI (dark slate + emerald), fully responsive, optimized, with Nodemailer-powered form and order emails (admin notification + user confirmation).
 

@@ -36,11 +36,11 @@ export async function POST(req: NextRequest) {
         <li>Date: ${data.preferredDate || "Flexible"}</li>
         <li>Time: ${data.preferredTime || "Flexible"}</li>
       </ul>
-      <p>— DreamLeadAgency</p>
+      <p>— ProspectListBuilding</p>
     `;
     await sendUserConfirmation(
       data.email,
-      "Call request confirmed — DreamLeadAgency",
+      "Call request confirmed — ProspectListBuilding",
       userHtml,
     );
 

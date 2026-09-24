@@ -1,4 +1,4 @@
-export const metadata = { title: "Privacy Policy" };
+export const metadata = { title: "Privacy Policy", description: "Read the ProspectListBuilding privacy policy and learn how submitted personal information is handled.", alternates: { canonical: "/privacy" } };
 
 export default function PrivacyPage() {
   return (
@@ -8,7 +8,7 @@ export default function PrivacyPage() {
         <p className="text-slate-400 mb-4">Last updated: September 2026</p>
         <div className="space-y-6 text-slate-300 text-sm leading-relaxed">
           <p>
-            DreamLeadAgency ("we", "us") respects your privacy. This policy
+            ProspectListBuilding ("we", "us") respects your privacy. This policy
             describes how we collect, use, and protect information when you use
             our website and services.
           </p>

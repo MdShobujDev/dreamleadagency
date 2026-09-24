@@ -38,11 +38,11 @@ export async function POST(req: NextRequest) {
       <blockquote style="border-left:3px solid #10b981;padding-left:12px;color:#555;">
         ${data.message.replace(/\n/g, "<br>")}
       </blockquote>
-      <p>— The DreamLeadAgency Team</p>
+      <p>— The ProspectListBuilding Team</p>
     `;
     await sendUserConfirmation(
       data.email,
-      "We received your message — DreamLeadAgency",
+      "We received your message — ProspectListBuilding",
       userHtml,
     );
 

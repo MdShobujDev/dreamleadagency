@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-export const metadata = { title: "Selected Work" };
+export const metadata = { title: "Selected Work", description: "Explore examples of B2B prospect research, lead list building, and data enrichment work.", alternates: { canonical: "/portfolio" } };
 
 const cases = [
   { industry: "B2B SaaS", title: "Sales-leader market mapping", challenge: "A sales platform needed a defined account universe across several markets, with senior revenue leaders mapped to each account.", approach: "We applied company-size, segment, and role rules, then organized the output into clear campaign cohorts.", delivery: ["ICP tier and account rationale", "Revenue-leader contact mapping", "Market and segment fields"] },

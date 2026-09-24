@@ -1,8 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import BrandMark from "@/components/BrandMark";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, Menu, X, Zap } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -58,10 +59,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-18">
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center shadow-glow group-hover:shadow-glow-lg transition-shadow">
-              <Zap className="w-5 h-5 text-white" />
+              <BrandMark className="w-6 h-6 text-white" />
             </div>
             <span className="text-lg font-bold tracking-tight text-white">
-              Dream<span className="text-brand-400">LeadAgency</span>
+              Prospect<span className="text-brand-400">ListBuilding</span>
             </span>
           </Link>
 

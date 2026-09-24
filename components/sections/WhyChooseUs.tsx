@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Why teams switch to DreamLeadAgency
+            Why teams switch to ProspectListBuilding
           </h2>
           <p className="text-slate-400">
             Built for sales and marketing teams who need quality over quantity —

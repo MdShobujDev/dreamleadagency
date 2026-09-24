@@ -133,7 +133,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs text-slate-400">
-                  Teams using DreamLeadAgency this week
+                  Teams using ProspectListBuilding this week
                 </p>
               </div>
             </div>

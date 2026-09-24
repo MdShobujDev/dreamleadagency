@@ -1,4 +1,5 @@
-import { Linkedin, Mail, MapPin, Phone, Twitter, Zap } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import BrandMark from "@/components/BrandMark";
 import Link from "next/link";
 
 const footerLinks = {
@@ -32,10 +33,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
+                <BrandMark className="w-6 h-6 text-white" />
               </div>
               <span className="text-lg font-bold text-white">
-                Dream<span className="text-brand-400">LeadAgency</span>
+                Prospect<span className="text-brand-400">ListBuilding</span>
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
@@ -95,7 +96,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} DreamLeadAgency. All rights reserved.
+            © {new Date().getFullYear()} ProspectListBuilding. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-slate-500">
             <Link href="/privacy" className="hover:text-slate-300">

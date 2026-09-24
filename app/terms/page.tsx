@@ -1,4 +1,4 @@
-export const metadata = { title: "Terms of Service" };
+export const metadata = { title: "Terms of Service", description: "Review the terms governing use of ProspectListBuilding websites and services.", alternates: { canonical: "/terms" } };
 
 export default function TermsPage() {
   return (
@@ -10,7 +10,7 @@ export default function TermsPage() {
         </p>
         <div className="space-y-6 text-slate-300 text-sm leading-relaxed">
           <p>
-            By using DreamLeadAgency websites and services, you agree to these
+            By using ProspectListBuilding websites and services, you agree to these
             terms. If you do not agree, please do not use our services.
           </p>
           <h2 className="text-lg font-semibold text-white">Services</h2>
@@ -39,7 +39,7 @@ export default function TermsPage() {
             Limitation of liability
           </h2>
           <p>
-            To the fullest extent permitted by law, DreamLeadAgency is not
+            To the fullest extent permitted by law, ProspectListBuilding is not
             liable for indirect or consequential damages arising from use of our
             services or data.
           </p>

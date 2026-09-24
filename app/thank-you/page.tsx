@@ -1,6 +1,8 @@
 import { ArrowRight, CheckCircle2, Mail } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = { title: "Order Received", robots: { index: false, follow: false } };
+
 export default function ThankYouPage() {
   return (
     <div className="py-20 md:py-28">
@@ -10,7 +12,7 @@ export default function ThankYouPage() {
         </div>
         <h1 className="text-3xl font-bold text-white mb-3">Order received!</h1>
         <p className="text-slate-400 mb-6 leading-relaxed">
-          Thanks for placing an order with DreamLeadAgency. We've emailed a
+          Thanks for placing an order with ProspectListBuilding. We've emailed a
           confirmation to the address you provided. Our team will review your
           requirements and follow up within one business day with pricing and
           timeline.
