@@ -5,9 +5,9 @@ import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const benefits = [
-  "Verified decision-maker contacts",
-  "Industry & geo targeting",
-  "GDPR & CCPA compliant data",
+  "Target accounts matched to your ideal customer profile",
+  "Relevant decision makers and business contact details",
+  "Organized, outreach-ready prospect data",
 ];
 
 export default function Hero() {
@@ -27,18 +27,18 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
               <Sparkles className="w-3.5 h-3.5" />
-              Built for modern revenue teams
+              Research-led B2B prospecting
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-              Your pipeline deserves{" "}
+              Find the right B2B prospects for your next campaign{" "}
               <span className="bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent">
-                better leads
+                with focused research
               </span>
             </h1>
             <p className="text-lg text-slate-400 max-w-xl mb-8 leading-relaxed">
-              Stop chasing stale spreadsheets. Get precision-targeted B2B
-              prospects, enriched data, and research your sales team can act on
-              immediately.
+              We build targeted B2B prospect lists around your market, ideal
+              customer profile, and buyer roles. Get company research, contact
+              discovery, and data enrichment in a format your sales team can use.
             </p>
             <ul className="space-y-3 mb-10">
               {benefits.map((b) => (
@@ -53,14 +53,14 @@ export default function Hero() {
                 href="/order"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-500 to-brand-600 rounded-xl shadow-glow hover:shadow-glow-lg hover:from-brand-400 hover:to-brand-500 transition-all"
               >
-                Start an Order
+                Request a project quote
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-200 bg-slate-800/80 border border-slate-700 rounded-xl hover:bg-slate-700/80 transition-colors"
               >
-                Book a Call
+                Discuss your targeting needs
               </Link>
             </div>
           </motion.div>
@@ -75,32 +75,32 @@ export default function Hero() {
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <span className="text-sm font-medium text-slate-300">
-                    Pipeline signal
+                    Prospect research snapshot
                   </span>
                   <p className="mt-1 text-xs text-slate-500">
-                    Weekly account intelligence
+                    Example fields in a tailored prospect list
                   </p>
                 </div>
                 <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-brand-500/20 text-brand-400">
-                  Active
+                  ICP-led
                 </span>
               </div>
               <div className="space-y-4">
                 {[
                   {
-                    label: "Accounts matched to ICP",
-                    value: "2,847",
-                    change: "+18%",
+                    label: "Target account research",
+                    value: "Company fit",
+                    change: "Defined to brief",
                   },
                   {
-                    label: "Verified decision-makers",
-                    value: "97.2%",
-                    change: "+2.1%",
+                    label: "Relevant buyer roles",
+                    value: "Decision makers",
+                    change: "Role targeted",
                   },
                   {
-                    label: "Ready for outreach",
-                    value: "99.4%",
-                    change: "On track",
+                    label: "Delivery format",
+                    value: "Outreach-ready",
+                    change: "Structured data",
                   },
                 ].map((stat) => (
                   <div
@@ -133,7 +133,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs text-slate-400">
-                  Teams using ProspectListBuilding this week
+                  Sample view — fields are tailored to each project
                 </p>
               </div>
             </div>

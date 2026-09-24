@@ -14,32 +14,32 @@ const features = [
   {
     icon: Target,
     title: "Precision Targeting",
-    desc: "Filter by industry, company size, role, tech stack, and geography so every lead matches your ICP.",
+    desc: "Set criteria for industry, company size, buyer role, technology, and geography based on your ideal customer profile.",
   },
   {
     icon: Database,
     title: "Verified & Enriched",
-    desc: "Multi-source validation, email verification, and firmographic enrichment keep data fresh and accurate.",
+    desc: "Add company details and contact fields your team needs to review, segment, and prioritize prospects.",
   },
   {
     icon: Clock,
-    title: "Fast Turnaround",
-    desc: "Most orders delivered in 3–7 business days. Rush options available when you need leads yesterday.",
+    title: "Clear Project Scope",
+    desc: "Agree on targeting criteria, required fields, and delivery format before research begins.",
   },
   {
     icon: Shield,
-    title: "Compliance First",
-    desc: "GDPR, CCPA, and CAN-SPAM aligned processes. Transparent sourcing and opt-out handling built in.",
+    title: "Research Transparency",
+    desc: "Set clear sourcing requirements, exclusions, and review expectations for each project.",
   },
   {
     icon: Users,
     title: "Decision-Maker Focus",
-    desc: "We prioritize contacts who actually buy — C-level, VPs, and budget holders in your niche.",
+    desc: "Focus research on the job titles and buying roles relevant to your product and target accounts.",
   },
   {
     icon: BarChart3,
     title: "Transparent Reporting",
-    desc: "Clear delivery reports, sample previews, and revision windows so you know exactly what you’re getting.",
+    desc: "Receive structured delivery files with agreed fields and notes to help your team review the research.",
   },
 ];
 
@@ -49,11 +49,10 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Why teams switch to ProspectListBuilding
+            B2B prospect research that fits your sales process
           </h2>
           <p className="text-slate-400">
-            Built for sales and marketing teams who need quality over quantity —
-            and measurable pipeline impact.
+            Built for teams that need a clear, relevant starting point for targeted outbound.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

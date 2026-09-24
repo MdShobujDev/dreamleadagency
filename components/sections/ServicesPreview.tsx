@@ -79,10 +79,10 @@ export default function ServicesPreview() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
-              Services that scale with you
+              B2B research and lead generation services
             </h2>
             <p className="text-slate-400 max-w-lg">
-              From one-off lists to ongoing enrichment — pick what you need.
+              Choose a focused prospect list, data enrichment, or ongoing research support for your campaigns.
             </p>
           </div>
           <Link

@@ -38,11 +38,11 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-white">Your rights</h2>
           <p>
             Depending on your location, you may have rights to access, correct,
-            or delete personal data we hold. Contact hello@dreamleadagency.com
+            or delete personal data we hold. Contact prospectlistbuilding1@gmail.com
             to exercise these rights.
           </p>
           <h2 className="text-lg font-semibold text-white">Contact</h2>
-          <p>Questions about this policy: hello@dreamleadagency.com</p>
+          <p>Questions about this policy: <a href="mailto:prospectlistbuilding1@gmail.com" className="text-brand-400 hover:text-brand-300">prospectlistbuilding1@gmail.com</a></p>
         </div>
       </div>
     </div>

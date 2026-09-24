@@ -1,9 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, CheckCircle2, Clock, Mail, Phone, Send } from "lucide-react";
+import { Calendar, CheckCircle2, Clock, Mail, MessageCircle, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+
+const profiles = [
+  { label: "Facebook", href: "https://www.facebook.com/ronibabu985404" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/roni-babu" },
+  { label: "Fiverr", href: "https://www.fiverr.com/prospectinglead?public_mode=true" },
+  { label: "Upwork", href: "https://www.upwork.com/freelancers/~0157524d23800d3aea" },
+];
 
 export default function ContactPage() {
   const [contact, setContact] = useState({
@@ -91,16 +98,14 @@ export default function ContactPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
             Get in touch
           </h1>
-          <p className="text-slate-400 max-w-xl mx-auto">
-            Questions, custom projects, or a quick chat — we respond within one
-            business day.
-          </p>
+          <p className="text-slate-400 max-w-xl mx-auto">Tell us about your target market, ideal customer profile, and lead research needs. We will get back to you within one business day.</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {[
-            { icon: Mail, label: "Email", value: "hello@dreamleadagency.com" },
-            { icon: Phone, label: "Phone", value: "+1 (555) 987-6543" },
+            { icon: Mail, label: "Email", value: "prospectlistbuilding1@gmail.com", href: "mailto:prospectlistbuilding1@gmail.com" },
+            { icon: Phone, label: "Mobile", value: "01568811848", href: "tel:+8801568811848" },
+            { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/8801568811848", external: true },
             { icon: Clock, label: "Hours", value: "Mon–Fri, 9am–6pm CT" },
           ].map((item) => (
             <div
@@ -112,10 +117,25 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs text-slate-500">{item.label}</p>
-                <p className="text-sm font-medium text-white">{item.value}</p>
+                {item.href ? (
+                  <a href={item.href} {...("external" in item && item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="text-sm font-medium text-white hover:text-brand-300">{item.value}</a>
+                ) : (
+                  <p className="text-sm font-medium text-white">{item.value}</p>
+                )}
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="-mt-8 mb-12 text-center">
+          <p className="mb-3 text-sm text-slate-400">Connect or view our profiles</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {profiles.map(({ label, href }) => (
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:border-brand-500 hover:text-brand-300">
+                {label}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">

@@ -128,7 +128,7 @@ export default function Header() {
               href="/order"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-500 to-brand-600 rounded-xl shadow-glow hover:shadow-glow-lg hover:from-brand-400 hover:to-brand-500 transition-all"
             >
-              Place Order
+              Request a Quote
             </Link>
           </div>
 
@@ -196,7 +196,7 @@ export default function Header() {
                 href="/order"
                 className="block mt-3 text-center px-4 py-3 text-sm font-semibold text-white bg-gradient-to-r from-brand-500 to-brand-600 rounded-xl"
               >
-                Place Order
+                Request a Quote
               </Link>
             </div>
           </motion.div>

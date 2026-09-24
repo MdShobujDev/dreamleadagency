@@ -44,7 +44,7 @@ export default function TermsPage() {
             services or data.
           </p>
           <h2 className="text-lg font-semibold text-white">Contact</h2>
-          <p>Legal inquiries: hello@dreamleadagency.com</p>
+          <p>Legal inquiries: <a href="mailto:prospectlistbuilding1@gmail.com" className="text-brand-400 hover:text-brand-300">prospectlistbuilding1@gmail.com</a></p>
         </div>
       </div>
     </div>

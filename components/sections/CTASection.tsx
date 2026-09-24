@@ -8,10 +8,10 @@ export default function CTASection() {
         <div className="glass rounded-3xl p-8 md:p-12 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-transparent pointer-events-none" />
           <h2 className="relative text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to fill your pipeline with better leads?
+            Need a better starting point for B2B outreach?
           </h2>
           <p className="relative text-slate-400 mb-8 max-w-xl mx-auto">
-            Tell us your ICP and volume. We'll come back with a clear quote and sample options.
+            Share your target market, buyer roles, and list requirements. We’ll review the brief and recommend a practical research scope.
           </p>
           <div className="relative flex flex-col sm:flex-row gap-4 justify-center">
             <Link
